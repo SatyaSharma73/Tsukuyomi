@@ -18,17 +18,36 @@
   background-color: black;
 
 }
+.sharingan{
+  background-color: #ebebeb;
 
+}
+.bio{
+  position: absolute;
+  top:50%;
+  left:30%;
+
+
+}
+.username{ font-family: "ubuntu";
+text-align: center;
+font-size: 1.5rem;
+}
+.Opening-quote{
+  font-family: "ubuntu";
+  text-align: center;
+  font-size: 1.5rem;
+}
  @import url(https://fonts.googleapis.com/css?family=Passion+One);
  body {
    background: #ebebeb;
    overflow:auto;
    margin: 0;
    font-family: 'Passion One', impact;
-
+position: relative;
  }
 img{
-  position: relative;
+
   padding-top: 10px;
   width: 50%;
   -webkit-transform: scaleX(-1);
@@ -40,7 +59,7 @@ img{
   text-align: center;
   bottom: 50%;
   left: 50%;
-  top: 50%;
+  top: 20%;
   color: black;
   font-family: 'Dancing Script', cursive;
   line-height: normal;
@@ -58,10 +77,7 @@ img{
  }
 
  #first {
-
-
    left:100px;
-
  }
 
  #retrigger--1:checked ~ .bg {
@@ -484,4 +500,36 @@ img{
  #retrigger--2:checked ~ .buttons {
    -webkit-animation-name: buttons--2;
            animation-name: buttons--2;
+ }
+
+
+ .wrapper {
+   height: 100vh;
+   /*This part is important for centering*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .typing-demo {
+   width: 19ch;
+   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+   white-space: nowrap;
+   overflow: hidden;
+   border-right: 3px solid;
+   font-family: monospace;
+   font-size: 2em;
+
+ }
+
+ @keyframes typing {
+   from {
+     width: 0
+   }
+ }
+
+ @keyframes blink {
+   50% {
+     border-color: transparent
+   }
  }
